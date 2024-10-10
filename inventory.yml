@@ -1,0 +1,29 @@
+all:
+  hosts:
+    srv-lb1-2399494:
+      ansible_host: 10.100.2.170
+      ansible_user: admin
+      env: production
+    srv-web1-2399494:
+      ansible_host: 10.100.2.168
+      ansible_user: admin
+      env: production
+    srv-web2-2399494:
+      ansible_host: 10.100.2.149
+      ansible_user: admin
+      env: production
+
+  children:
+    lbservers:
+      hosts:
+        srv-lb1-2399494: {}
+
+    webservers:
+      hosts:
+        srv-web1-2399494: {}
+        srv-web2-2399494: {}
+
+    prod:
+      children:
+        lbservers: {}
+        webservers: {}
