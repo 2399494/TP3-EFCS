@@ -13,7 +13,7 @@
 - Serveurs Web (srv-web1, srv-web2) avec des configurations distinctes
 
 ### Vidéo de démonstration :
-[Voir la vidéo](https://lienverslavideo.com)
+[Voir la vidéo](https://lienverslavideo.com](https://cegepsaintefoy-my.sharepoint.com/:v:/r/personal/2399494_csfoy_ca/Documents/E24_4363_420W45_Ub_Cli_AT_2399494%20-%20Google%20Chrome%202024-10-10%2017-32-53.mp4?csf=1&web=1&e=5bJE9p)
 
 ## Utilisation :
 1. Clonez le dépôt.
