@@ -1,0 +1,34 @@
+- name: Configure Nginx Load Balancer
+  hosts: lbservers
+  tasks:
+    - name: Install required packages
+      apt:
+        name:
+          - docker.io
+          - docker-compose
+        state: present
+      become: yes  # Assurez-vous d'exécuter cette tâche avec des privilèges sudo
+
+    - name: Deploy Nginx configuration
+      template:
+        src: templates/nginx.conf.j2
+        dest: /etc/nginx/nginx.conf
+      become: yes  # Nécessaire pour écrire dans /etc/nginx
+
+    - name: Create Nginx container
+      docker_container:
+        name: nginx-lb
+        image: nginx:latest
+        state: started
+        restart_policy: always
+        volumes:
+          - /etc/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+        ports:
+          - "80:80"
+      become: yes  # Si Docker nécessite des privilèges root
+
+    - name: Ensure Nginx container is running
+      docker_container:
+        name: nginx-lb
+        state: started
+      become: yes  # Pour s'assurer que le conteneur est bien démarré
