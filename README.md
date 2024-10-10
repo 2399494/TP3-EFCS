@@ -6,7 +6,7 @@
 **Description** : Ce projet consiste à déployer une architecture de site Web avec équilibrage de charge en utilisant Ansible et Docker. Nginx agit comme un équilibreur de charge, Apache sert de serveur de contenu, php-fpm est utilisé pour FastCGI, et MySQL pour la base de données. Tout le déploiement est automatisé à l'aide de conteneurs.
 
 ## Adresse du dépôt GitHub :
-[Mon Dépôt GitHub](https://github.com/votre-nom-utilisateur/nom-du-depot)
+[Mon Dépôt GitHub]([https://github.com/votre-nom-utilisateur/nom-du-depot](https://github.com/2399494/TP3-EFCS.git)
 
 ## Infrastructure déployée :
 - Nginx comme Load Balancer
