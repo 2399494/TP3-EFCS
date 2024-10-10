@@ -1,5 +1,6 @@
 # Déploiement Automatisé d'une Architecture Web avec Nginx, Apache, PHP et MySQL via Ansible et Docker
 
+
 **Date** : 9 octobre 2024  
 
 **Description** : Ce projet consiste à déployer une architecture de site Web avec équilibrage de charge en utilisant Ansible et Docker. Nginx agit comme un équilibreur de charge, Apache sert de serveur de contenu, php-fpm est utilisé pour FastCGI, et MySQL pour la base de données. Tout le déploiement est automatisé à l'aide de conteneurs.
