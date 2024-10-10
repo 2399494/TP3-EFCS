@@ -1,0 +1,126 @@
+
+PLAY [Configure Web Servers] ***************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [srv-web2-2399494]
+ok: [srv-web1-2399494]
+
+TASK [Gather facts] ************************************************************
+ok: [srv-web2-2399494]
+ok: [srv-web1-2399494]
+
+TASK [Ajouter le dépôt de PHP] *************************************************
+ok: [srv-web2-2399494]
+ok: [srv-web1-2399494]
+
+TASK [Mettre à jour le cache de APT] *******************************************
+changed: [srv-web2-2399494]
+changed: [srv-web1-2399494]
+
+TASK [Installer les dépendances requises] **************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Ajouter la clé GPG du dépôt Docker] **************************************
+ok: [srv-web2-2399494]
+ok: [srv-web1-2399494]
+
+TASK [Déterminer la version de la distribution] ********************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Ajouter le dépôt de Docker] **********************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Installer Docker] ********************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Démarrer et activer le service Docker] ***********************************
+ok: [srv-web2-2399494]
+ok: [srv-web1-2399494]
+
+TASK [Installer PHP et PHP-FPM] ************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Démarrer et activer le service PHP-FPM] **********************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Installer MySQL] *********************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Démarrer et activer le service MySQL] ************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+PLAY RECAP *********************************************************************
+srv-web1-2399494           : ok=14   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+srv-web2-2399494           : ok=14   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Configure Web Servers] ***************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Gather facts] ************************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Ajouter le dépôt de PHP] *************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Mettre à jour le cache de APT] *******************************************
+ok: [srv-web2-2399494]
+ok: [srv-web1-2399494]
+
+TASK [Installer les dépendances requises] **************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Ajouter la clé GPG du dépôt Docker] **************************************
+ok: [srv-web2-2399494]
+ok: [srv-web1-2399494]
+
+TASK [Déterminer la version de la distribution] ********************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Ajouter le dépôt de Docker] **********************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Installer Docker] ********************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Démarrer et activer le service Docker] ***********************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Installer PHP et PHP-FPM] ************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Démarrer et activer le service PHP-FPM] **********************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Installer MySQL] *********************************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+TASK [Démarrer et activer le service MySQL] ************************************
+ok: [srv-web1-2399494]
+ok: [srv-web2-2399494]
+
+PLAY RECAP *********************************************************************
+srv-web1-2399494           : ok=14   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+srv-web2-2399494           : ok=14   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
