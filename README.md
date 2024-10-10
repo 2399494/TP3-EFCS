@@ -28,9 +28,13 @@
 ## Fichiers inclus :
 - `deploiement.yaml` : Playbook principal pour déployer l'infrastructure.
 - `ansible.cfg` : Configuration Ansible.
-- `inventaire.yaml` : Fichier d'inventaire pour les hôtes.
+- `inventory.yml` : Fichier d'inventaire pour les hôtes.
 - `.traces_d_ansible` : Fichier de traçage des commandes Ansible.
 - `httpd.conf` : Configuration d'Apache.
+- `web.yaml` : Playbook pour déployer le serveur web.
+- `index.html` : Page d'accueil statique.
+- `index.php` : Page d'accueil dynamique en PHP.
+- `prod.yml` : Playbook ou inventaire pour l'environnement de production.
 
 ## Sites de référence :
 - [Documentation officielle Ansible](https://docs.ansible.com)
