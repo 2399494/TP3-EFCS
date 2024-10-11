@@ -42,6 +42,7 @@
 - `index.html` : Page d'accueil statique.
 - `index.php` : Page d'accueil dynamique en PHP.
 - `prod.yml` : Playbook ou inventaire pour l'environnement de production.
+- `secrets.yml` : fichier pour les informations sensibles(mots de passes ...).
 
 ### Vidéo de démonstration :
 [Voir la vidéo](https://cegepsaintefoy-my.sharepoint.com/:v:/r/personal/2399494_csfoy_ca/Documents/E24_4363_420W45_Ub_Cli_AT_2399494%20-%20Google%20Chrome%202024-10-10%2017-32-53.mp4?csf=1&web=1&e=5bJE9p)
