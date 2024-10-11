@@ -12,19 +12,26 @@
 - MySQL pour la gestion de base de données
 - Serveurs Web (srv-web1, srv-web2) avec des configurations distinctes
 
-### Vidéo de démonstration :
-[Voir la vidéo](https://cegepsaintefoy-my.sharepoint.com/:v:/r/personal/2399494_csfoy_ca/Documents/E24_4363_420W45_Ub_Cli_AT_2399494%20-%20Google%20Chrome%202024-10-10%2017-32-53.mp4?csf=1&web=1&e=5bJE9p)
+## Structure des fichiers :
+```
+.
+├── ansible.cfg
+├── deploiement.yaml
+├── files
+│   ├── index.html
+│   └── index.php
+├── hosts
+├── inventory.yml
+├── loadBalancer.yaml
+├── secrets.yml
+├── templates
+│   ├── httpd.conf
+│   ├── nginx.conf.j2
+│   └── www.efcs.com.conf
+└── web.yaml
 
-
-## Utilisation :
-1. Clonez le dépôt.
-2. Assurez-vous que Docker et Ansible sont installés sur votre machine.
-3. Ajoutez le fichier `.traces_d_ansible` pour traquer les commandes Ansible exécutées.
-4. Lancez le déploiement avec la commande suivante :
-    ```bash
-    ansible-playbook deploiement.yaml
-    ```
-
+3 directories, 14 files
+```
 ## Fichiers inclus :
 - `deploiement.yaml` : Playbook principal pour déployer l'infrastructure.
 - `ansible.cfg` : Configuration Ansible.
@@ -35,6 +42,18 @@
 - `index.html` : Page d'accueil statique.
 - `index.php` : Page d'accueil dynamique en PHP.
 - `prod.yml` : Playbook ou inventaire pour l'environnement de production.
+
+### Vidéo de démonstration :
+[Voir la vidéo](https://cegepsaintefoy-my.sharepoint.com/:v:/r/personal/2399494_csfoy_ca/Documents/E24_4363_420W45_Ub_Cli_AT_2399494%20-%20Google%20Chrome%202024-10-10%2017-32-53.mp4?csf=1&web=1&e=5bJE9p)
+
+## Utilisation :
+1. Clonez le dépôt.
+2. Assurez-vous que Docker et Ansible sont installés sur votre machine.
+3. Ajoutez le fichier `.traces_d_ansible` pour traquer les commandes Ansible exécutées.
+4. Lancez le déploiement avec la commande suivante :
+    ```bash
+    ansible-playbook deploiement.yaml
+    ```
 
 ## Sites de référence :
 - [Documentation officielle Ansible](https://docs.ansible.com)
